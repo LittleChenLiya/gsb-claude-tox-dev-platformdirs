@@ -7,3 +7,6 @@
 /docs/build
 /.coverage
 /.coverage.*
+/.pytest_cache
+/.ruff_cache
+/.tmp

@@ -58,6 +58,19 @@ else:
     PlatformDirs = _set_platform_dir_class()  #: Currently active platform
 AppDirs = PlatformDirs  #: Backwards compatibility with appdirs
 
+from .migrate import (
+    ConfigMigrator,
+    FileEntry,
+    LogIdentityError,
+    MigrationError,
+    MigrationHooks,
+    MigrationPlan,
+    MigrationResult,
+    SymlinkRejectedError,
+    TargetExistsError,
+    VerificationError,
+)
+
 
 def user_data_dir(  # ruff:ignore[too-many-arguments, too-many-positional-arguments]
     appname: str | None = None,
@@ -997,9 +1010,19 @@ def site_runtime_path(
 
 __all__ = [
     "AppDirs",
+    "ConfigMigrator",
+    "FileEntry",
+    "LogIdentityError",
+    "MigrationError",
+    "MigrationHooks",
+    "MigrationPlan",
+    "MigrationResult",
     "PlatformDirs",
     "PlatformDirsABC",
     "RuntimeDirWarning",
+    "SymlinkRejectedError",
+    "TargetExistsError",
+    "VerificationError",
     "__version__",
     "__version_info__",
     "site_applications_dir",
