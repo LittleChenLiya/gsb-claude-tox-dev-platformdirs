@@ -16,6 +16,7 @@ import sys
 from typing import TYPE_CHECKING
 
 from .api import PlatformDirsABC, RuntimeDirWarning
+from .logical import LogicalPathError, decode_path, encode_path
 from .version import __version__
 from .version import __version_tuple__ as __version_info__
 
@@ -997,11 +998,14 @@ def site_runtime_path(
 
 __all__ = [
     "AppDirs",
+    "LogicalPathError",
     "PlatformDirs",
     "PlatformDirsABC",
     "RuntimeDirWarning",
     "__version__",
     "__version_info__",
+    "decode_path",
+    "encode_path",
     "site_applications_dir",
     "site_applications_path",
     "site_bin_dir",
