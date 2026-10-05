@@ -16,6 +16,7 @@ import sys
 from typing import TYPE_CHECKING
 
 from .api import PlatformDirsABC, RuntimeDirWarning
+from .generation import GenerationError, GenerationManager, Lease, LeaseError, NoCurrentError, OwnershipError
 from .version import __version__
 from .version import __version_tuple__ as __version_info__
 

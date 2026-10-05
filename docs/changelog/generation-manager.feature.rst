@@ -1,0 +1,1 @@
+Added ``platformdirs.GenerationManager``: a seal-before-switch generation manager for an explicit cache root with lease-protected reclamation, ownership takeover refusal, and no-follow deletion of only manager-marked retired directories.
